@@ -40,7 +40,19 @@
     <div class="bg-sec py-4">
       <div class="container-lg">
         <div class="row">
-
+          <div class="col-12 d-flex justify-content-between">
+            <div class="my_button text-uppercase">
+              sign-up now!
+            </div>
+            <div class="d-flex align-items-center justify-content-end gap-3">
+              <h4 class="text-uppercase my_cta">Follow Us</h4>
+              <img class="" src="../assets/img/footer-facebook.png" alt="fb">
+              <img src="../assets/img/footer-twitter.png" alt="twitter">
+              <img src="../assets/img/footer-youtube.png" alt="youtube">
+              <img src="../assets/img/footer-pinterest.png" alt="pinterest">
+              <img src="../assets/img/footer-periscope.png" alt="periscope">
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -203,5 +215,16 @@ export default {
   a{
     color: lightgrey;
     text-decoration: none;
+  }
+  .my_button{
+    color: white;
+    border: 2px solid $brandColor;
+    padding: 10px;
+    &:hover{
+      cursor: pointer;
+    }
+  }
+  .my_cta{
+    color: $brandColor;
   }
 </style>

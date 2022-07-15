@@ -26,7 +26,7 @@ export default {
   @import "~bootstrap/dist/css/bootstrap.css";
 
   *{
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
   }
 
 
