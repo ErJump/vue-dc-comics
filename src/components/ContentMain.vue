@@ -5,11 +5,11 @@
         <h3 class="text-white">Content goes here</h3>
       </div>
     </div>
-    <div class="bg-sec py-3">
+    <div class="bg-sec py-5">
       <div class="container-lg">
         <div class="row justify-content-around">
           <div v-for="(element, index) in productsList" :key="index" class="col-2 d-flex justify-content-center align-items-center">
-            <img  class="w-25" :src="completeImgPath(element.img)" :alt="element.name">
+            <img  class="w-25" src='../assets/img/buy-comics-digital-comics.png' :alt="element.name">
             <h5 class="text-uppercase text-white ms-2 fs-6">{{element.name}}</h5>
           </div>
         </div>
@@ -48,9 +48,10 @@ export default {
     }
   },
   methods: {
-    completeImgPath: function(img){
-      return "../assets/img/" + img + ".png";
-    }
+    /* completeImgPath: function(img){
+      let image = require.context('../assets/img/');
+      return image(`./${img}.png`);
+    } */
   }
 }
 </script>
@@ -63,5 +64,5 @@ export default {
   }
   .bg-sec{
     background-color: $brandColor;
-  }
+  } 
 </style>
