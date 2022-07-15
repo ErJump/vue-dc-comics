@@ -22,6 +22,12 @@ export default {
 </script>
 
 <style lang="scss">
-@import "assets/styles/variables.scss";
-@import "~bootstrap/dist/css/bootstrap.css";
+  @import "assets/styles/variables.scss";
+  @import "~bootstrap/dist/css/bootstrap.css";
+
+  *{
+    outline: 1px solid red;
+  }
+
+
 </style>
