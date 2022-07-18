@@ -7,7 +7,13 @@
           Current series
         </div>
         <div class="row mt-4">
-          <ComicCard v-for="(comic, index) in comicsList" :key="index" />
+          <ComicCard v-for="(comic, index) in comicsList" :key="index" 
+          :object="comic"/>
+        </div>
+        <div class="d-flex justify-content-center">
+          <div class="text-uppercase text-white my_button">
+            Load More
+          </div>
         </div>
       </div>
     </div>
@@ -162,5 +168,13 @@ export default {
     height: 200px;
     width: 100%;
     object-position: top;
+  }
+  .my_button{
+    background-color: $brandColor;
+    padding: 10px 50px ; 
+    align-self: center;
+    &:hover{
+      cursor: pointer;
+    }
   }
 </style>
