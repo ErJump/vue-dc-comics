@@ -1,6 +1,7 @@
 <template>
   <div class="bg-main">
-    <div class="py-5">
+    <div>
+      <JumbotronMain />
       <div class="container-lg">
         <h3 class="text-white">Content goes here</h3>
       </div>
@@ -19,8 +20,13 @@
 </template>
 
 <script>
+import JumbotronMain from './JumbotronMain.vue';
+
 export default {
   name: 'ContentMain',
+  components: {
+    JumbotronMain,
+  },
   data: function(){
     return {
       productsList: [
@@ -47,9 +53,7 @@ export default {
       ],
     }
   },
-  methods: {
-    
-  }
+  
 }
 </script>
 
