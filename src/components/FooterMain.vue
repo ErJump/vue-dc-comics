@@ -32,7 +32,7 @@
             </div>
           </div>
           <div class="col-6 bg-logo d-flex justify-content-end">
-            <img src="../assets/img/dc-logo-bg.png" alt="bg logo">
+            <img src="../../public/img/dc-logo-bg.png" alt="bg logo">
           </div>  
         </div>
       </div>
@@ -46,11 +46,11 @@
             </div>
             <div class="d-flex align-items-center justify-content-end gap-3">
               <h4 class="text-uppercase my_cta">Follow Us</h4>
-              <img class="" src="../assets/img/footer-facebook.png" alt="fb">
-              <img src="../assets/img/footer-twitter.png" alt="twitter">
-              <img src="../assets/img/footer-youtube.png" alt="youtube">
-              <img src="../assets/img/footer-pinterest.png" alt="pinterest">
-              <img src="../assets/img/footer-periscope.png" alt="periscope">
+              <img class="" src="../../public/img/footer-facebook.png" alt="fb">
+              <img src="../../public/img/footer-twitter.png" alt="twitter">
+              <img src="../../public/img/footer-youtube.png" alt="youtube">
+              <img src="../../public/img/footer-pinterest.png" alt="pinterest">
+              <img src="../../public/img/footer-periscope.png" alt="periscope">
             </div>
           </div>
         </div>
@@ -181,7 +181,7 @@ export default {
 <style scoped lang="scss">
   @import "../assets/styles/variables.scss";
   .bg-main{
-    background-image: url(../assets/img/footer-bg.jpg);
+    background-image: url(../../public/img/footer-bg.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

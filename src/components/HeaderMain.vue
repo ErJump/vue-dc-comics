@@ -2,7 +2,7 @@
   <div>
     <nav class="navbar navbar-expand-lg bg-white">
       <div class="container-lg d-flex ">
-        <img class="" src="../assets/img/dc-logo.png" alt="">
+        <img class="" src="../../public/img/dc-logo.png" alt="">
         <div class=" justify-content-end" id="navbarNavAltMarkup">
           <div class="navbar-nav justify-self-end">
             <a class="nav-link active px-3" href="#" v-for="(link, index) in menuList" :key="index">{{link.name}}</a>    

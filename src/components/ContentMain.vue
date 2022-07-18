@@ -45,13 +45,10 @@ export default {
           img: "buy-dc-power-visa.svg",
         },
       ],
-      imgPath: require("../assets/img/buy-comics-digital-comics.png"),
     }
   },
   methods: {
-    completeImgPath: function(img){
-      return "@/assets/img/" + img + ".png";
-    }
+    
   }
 }
 </script>
