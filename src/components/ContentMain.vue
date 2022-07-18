@@ -9,7 +9,7 @@
       <div class="container-lg">
         <div class="row justify-content-around">
           <div v-for="(element, index) in productsList" :key="index" class="col-2 d-flex justify-content-center align-items-center">
-            <img  class="w-25" src='../assets/img/buy-comics-digital-comics.png' :alt="element.name">
+            <img  class="w-25" :src="`/img/${element.img}`" :alt="element.name">
             <h5 class="text-uppercase text-white ms-2 fs-6">{{element.name}}</h5>
           </div>
         </div>
@@ -26,32 +26,32 @@ export default {
       productsList: [
         {
           name: "digital comics",
-          img: "buy-comics-digital-comics",
+          img: "buy-comics-digital-comics.png",
         },
         {
           name: "dc merchandise",
-          img: "buy-comics-merchandise",
+          img: "buy-comics-merchandise.png",
         },
         {
           name: "subscription",
-          img: "buy-comics-subscriptions",
+          img: "buy-comics-subscriptions.png",
         },
         {
           name: "comic shop locator",
-          img: "buy-comics-shop-locator",
+          img: "buy-comics-shop-locator.png",
         },
         {
           name: "dc power visa",
-          img: "buy-comics-power-visa",
+          img: "buy-dc-power-visa.svg",
         },
-      ]
+      ],
+      imgPath: require("../assets/img/buy-comics-digital-comics.png"),
     }
   },
   methods: {
-    /* completeImgPath: function(img){
-      let image = require.context('../assets/img/');
-      return image(`./${img}.png`);
-    } */
+    completeImgPath: function(img){
+      return "@/assets/img/" + img + ".png";
+    }
   }
 }
 </script>
@@ -64,5 +64,5 @@ export default {
   }
   .bg-sec{
     background-color: $brandColor;
-  } 
+  }
 </style>
