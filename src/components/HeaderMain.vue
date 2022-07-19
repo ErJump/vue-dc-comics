@@ -15,7 +15,7 @@
 
 <script>
 export default {
-  name: 'ContentMain',
+  name: 'HeaderMain',
   data: function (){
     return {
       menuList: [

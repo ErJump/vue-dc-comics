@@ -61,7 +61,7 @@
 
 <script>
 export default {
-  name: 'ContentMain',
+  name: 'FooterMain',
   data: function() {
     return {
       dcComicsList: [
